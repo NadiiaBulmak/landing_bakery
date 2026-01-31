@@ -1,3 +1,5 @@
+@use '../utils' as *;
+
 .nav {
   &__list {
     @include flexing(flex, center, space-between);
@@ -19,16 +21,18 @@
       flex-direction: column;
     }
   }
+
   &__item {
     &--header {
       @include hover(transform, scale(1.1));
     }
   }
+
   &__img {
     &--phone {
       @include sizing(24px, 24px);
 
-      background-image: url(/src/images/icons/Icon-phone.png);
+      background-image: url('/src/images/icons/Icon-phone.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -38,6 +42,7 @@
       // }
     }
   }
+
   &__link {
     text-decoration: none;
     position: relative;
@@ -46,12 +51,14 @@
     &:hover {
       color: $accent-orange;
     }
+
     &:active,
     &:focus {
       color: $dark-orange;
     }
+
     &:focus .nav__img--phone {
-      background-image: url(/src/images/icons/Icon-phone--active.png);
+      background-image: url('/src/images/icons/Icon-phone--active.png');
     }
 
     &::after {
@@ -71,6 +78,7 @@
       transform: scale(1);
       transform-origin: left;
     }
+
     &:active::after {
       background-color: $dark-orange;
     }
@@ -81,10 +89,12 @@
       text-decoration: none;
       color: $white-color;
       transform-origin: 0 50%;
+
       &:hover {
         color: white;
         transform-origin: 0 50%;
       }
+
       &::after {
         content: '';
         display: block;
@@ -97,15 +107,18 @@
         transition: transform $effect-duration;
         transform: scale(0);
       }
+
       &:hover::after,
       &:active::after {
         transform: scale(1);
         transform-origin: left;
       }
+
       &:active::after {
         background-color: white;
       }
     }
+
     &--icon {
       @include flexing(flex, center, space-between);
 
@@ -116,6 +129,7 @@
       gap: 4px;
     }
   }
+
   &__title {
     @include uppercase-text-style;
 
@@ -124,7 +138,7 @@
 }
 
 .nav__img--phone .nav__link:active {
-  background-image: url(/src/images/icons/Icon-phone--active.png);
+  background-image: url('/src/images/icons/Icon-phone--active.png');
 }
 
 // .nav__link--footer {

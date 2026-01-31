@@ -1,7 +1,10 @@
+@use '../utils' as *;
+
 .section {
   @include content-padding-inline;
 
   position: relative;
+
   &__bg-img {
     position: absolute;
     width: 100%;
@@ -24,6 +27,7 @@
       margin: 0 auto;
     }
   }
+
   &__content {
     @include content-padding-inline;
     @include page-grid;
@@ -40,6 +44,7 @@
       height: 673px;
     }
   }
+
   &__few-words-about-us {
     position: relative;
     padding-inline: 0;
@@ -63,6 +68,7 @@
       justify-content: center;
     }
   }
+
   &__title {
     @include h2-text-style;
 
@@ -73,12 +79,14 @@
     @include on-tablet {
       grid-column: 1 / 5;
     }
+
     &__uppercase-text {
       @include uppercase-text-style;
 
       color: $grey-color;
     }
   }
+
   &__description {
     text-wrap: balance;
     grid-column: 1 / -1;
@@ -86,6 +94,7 @@
     @include on-tablet {
       grid-column: 5 / 9;
     }
+
     &--row {
       margin-top: 32px;
 
@@ -93,6 +102,7 @@
         margin-top: 0;
       }
     }
+
     &--column {
       margin-top: 24px;
     }
@@ -101,6 +111,7 @@
       margin-top: 32px;
     }
   }
+
   &__cards {
     @include page-grid;
 
@@ -112,12 +123,14 @@
       row-gap: 80px;
     }
   }
+
   &__card {
     opacity: 0;
     transition:
       opacity 0.3s,
       transform 0.3s;
     grid-column: 1 / -1;
+
     &.animate {
       opacity: 1;
     }
@@ -126,6 +139,7 @@
       &:nth-child(n) {
         grid-column: 1 / 5;
       }
+
       &:nth-child(2n) {
         grid-column: 5 / span 4;
       }
@@ -136,18 +150,22 @@
       &:nth-child(5) {
         grid-column: 1 / span 3;
       }
+
       &:nth-child(2),
       &:nth-child(6) {
         grid-column: 4 / span 3;
       }
+
       &:nth-child(3) {
         grid-column: 3 / span 3;
       }
+
       &:nth-child(4) {
         grid-column: 6 / span 3;
       }
     }
   }
+
   &__infos {
     margin-top: 64px;
     grid-column: 1 / -1;
@@ -168,6 +186,7 @@
       grid-template-rows: repeat(1, 1fr);
     }
   }
+
   &__info {
     &:nth-child(1) {
       grid-column: 1 / 5;
@@ -178,6 +197,7 @@
         grid-row: 1;
       }
     }
+
     &:nth-child(2) {
       grid-column: 5 / 9;
       grid-row: 1 / 2;
@@ -187,6 +207,7 @@
         grid-row: 1;
       }
     }
+
     &:nth-child(3) {
       grid-column: 1 / 5;
       grid-row: 2 / 3;
@@ -196,6 +217,7 @@
         grid-row: 1;
       }
     }
+
     &:nth-child(4) {
       grid-column: 5 / 9;
       grid-row: 2 / 3;

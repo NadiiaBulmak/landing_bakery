@@ -1,13 +1,15 @@
+@use '../utils' as *;
+
 .footer {
   background-color: $black-color;
   width: 100vw;
   margin-inline: auto;
-
   padding-block: 56px;
 
   @include on-tablet {
     padding-block: 88px;
   }
+
   &__content {
     @include content-padding-inline;
     @include flex-column;
@@ -29,6 +31,7 @@
       grid-column: 1 / 5;
     }
   }
+
   &__logo-img {
     @include sizing(168px, 40px);
   }
@@ -46,6 +49,7 @@
       grid-column: 1 / 5;
     }
   }
+
   &__title {
     @include h2-text-style;
     @include flex-column;
@@ -60,11 +64,13 @@
       grid-row: 1;
     }
   }
+
   &__uppercase-text {
     @include uppercase-text-style;
 
     color: $grey-color;
   }
+
   &__contact {
     @include flex-column;
 
@@ -78,6 +84,7 @@
       width: 280px;
     }
   }
+
   &__contacts {
     @include flex-column;
 
@@ -96,6 +103,7 @@
       gap: 24px;
     }
   }
+
   &__icons {
     @include flexing(flex, center, flex-start);
 
@@ -120,6 +128,7 @@
       grid-column: 5 / 9;
     }
   }
+
   &__link {
     text-decoration: none;
     color: $white-color;
@@ -138,11 +147,13 @@
       transition: transform $effect-duration;
       transform: scale(0);
     }
+
     &:hover::after,
     &:active::after {
       transform: scale(1);
       transform-origin: left;
     }
+
     &:active::after {
       background-color: white;
     }

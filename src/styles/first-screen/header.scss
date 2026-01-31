@@ -1,3 +1,5 @@
+@use '../utils' as *;
+
 .header {
   &__content {
     @include header-padding-inline;

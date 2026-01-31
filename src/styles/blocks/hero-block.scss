@@ -1,3 +1,5 @@
+@use '../utils' as *;
+
 .hero-block {
   @include page-grid;
   @include hero-block-padding;

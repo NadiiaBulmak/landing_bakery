@@ -1,7 +1,10 @@
+@use '../utils' as *;
+
 .main {
   @include margin-block;
 
   margin: 0 auto;
+
   &__content {
     position: relative;
     display: flex;
