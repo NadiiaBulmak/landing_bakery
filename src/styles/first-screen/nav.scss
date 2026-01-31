@@ -1,5 +1,3 @@
-@use '../utils' as *;
-
 .nav {
   &__list {
     @include flexing(flex, center, space-between);
@@ -30,10 +28,14 @@
     &--phone {
       @include sizing(24px, 24px);
 
-      background-image: url(/src/images/icons/icon-phone.png);
+      background-image: url(/src/images/icons/Icon-phone.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+
+      // & .nav__link:active {
+      //   background-image: url(/src/images/icons/Icon-phone--active.png);
+      // }
     }
   }
   &__link {
@@ -49,7 +51,7 @@
       color: $dark-orange;
     }
     &:focus .nav__img--phone {
-      background-image: url(/src/images/icons/icon-phone--active.png);
+      background-image: url(/src/images/icons/Icon-phone--active.png);
     }
 
     &::after {
@@ -122,5 +124,13 @@
 }
 
 .nav__img--phone .nav__link:active {
-  background-image: url(/src/images/icons/icon-phone--active.png);
+  background-image: url(/src/images/icons/Icon-phone--active.png);
 }
+
+// .nav__link--footer {
+//   @include hover(transform, scale(1.1));
+
+//   &:hover {
+//     transform-origin: 0 50%;
+//   }
+// }

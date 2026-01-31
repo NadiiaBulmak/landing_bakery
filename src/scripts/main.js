@@ -1,26 +1,26 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const menu = document.getElementById('menu');
-  const openMenuButton = document.querySelector('.icon--menu');
-  const closeMenuButton = document.querySelector('.icon--close');
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.getElementById("menu");
+  const openMenuButton = document.querySelector(".icon--menu");
+  const closeMenuButton = document.querySelector(".icon--close");
   const body = document.body;
-  const menuLinks = document.querySelectorAll('#menu a');
+  const menuLinks = document.querySelectorAll("#menu a");
 
-  openMenuButton.addEventListener('click', () => {
-    menu.classList.add('menu--open');
-    body.classList.add('no-scroll');
+  openMenuButton.addEventListener("click", () => {
+    menu.classList.add("menu--open");
+    body.classList.add("no-scroll");
   });
 
-  closeMenuButton.addEventListener('click', () => {
-    menu.classList.remove('menu--open');
-    body.classList.remove('no-scroll');
+  closeMenuButton.addEventListener("click", () => {
+    menu.classList.remove("menu--open");
+    body.classList.remove("no-scroll");
   });
 
   menuLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('menu--open');
-      body.classList.remove('no-scroll');
+    link.addEventListener("click", () => {
+      menu.classList.remove("menu--open");
+      body.classList.remove("no-scroll");
     });
   });
 });
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       },
-      { threshold: 0.5 },
+      { threshold: 0.5 }
     );
 
     cards.forEach((card) => {

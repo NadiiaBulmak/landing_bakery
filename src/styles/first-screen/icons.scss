@@ -1,7 +1,5 @@
-@use '../utils' as *;
-
 .icon {
-  background-image: url('../images/icons/icon-menu.png');
+  background-image: url(../images/icons/Icon-menu.png);
   background-size: cover;
   background-position: center;
   display: block;
@@ -10,34 +8,31 @@
   @include hover(transform, scale(1.2));
 
   &--menu {
-    background-image: url('../images/icons/icon-menu.png');
+    background-image: url(../images/icons/Icon-menu.png);
   }
 
   &--close {
-    background-image: url('../images/icons/icon-close.png');
+    background-image: url(../images/icons/Icon-close.png);
   }
-
   &--twitter {
-    background-image: url('../images/icons/icon-twitter.png');
+    background-image: url(../images/icons/Icon-twitter.png);
     &:hover,
     &:active {
-      background-image: url('../images/icons/icon-twitter--hover.png');
+      background-image: url(../images/icons/Icon-twitter--hover.png);
     }
   }
-
   &--instagram {
-    background-image: url('../images/icons/icon-instagram.png');
+    background-image: url(../images/icons/Icon-instagram.png);
     &:hover,
     &:active {
-      background-image: url('../images/icons/icon-instagram--hover.png');
+      background-image: url(../images/icons/Icon-instagram--hover.png);
     }
   }
-
   &--facebook {
-    background-image: url('../images/icons/icon-facebook.png');
+    background-image: url(../images/icons/Icon-facebook.png);
     &:hover,
     &:active {
-      background-image: url('../images/icons/icon-facebook--hover.png');
+      background-image: url(../images/icons/Icon-facebook--hover.png);
     }
   }
 }
