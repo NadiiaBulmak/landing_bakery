@@ -1,6 +1,14 @@
-# 🍰 Bakery Landing Project
+# 🍰 Bakery Landing Project | [DEMO](https://nadiiabulmak.github.io/landing_bakery/)
 
-A responsive landing page for a bakery, designed to showcase their products and services. This project demonstrates the use of modern web technologies, including BEM methodology, Flexbox, Grid, Sass, as well as Animation and Transformation effects to create a clean and visually appealing layout.
+A responsive bakery landing page built with BEM, Flexbox, Grid, Sass, and CSS animations to create a clean and visually appealing layout.
+
+## 🛠️ Technologies Used:
+
+- HTML5 — semantic markup and page structure
+- SCSS (Sass) — modular and maintainable styling
+- BEM methodology — scalable CSS architecture
+- Flexbox & CSS Grid — responsive layouts
+- CSS Animations & Transitions — enhanced user experience
 
 ## 🌟 Features:
 - **Responsive Design**: Optimized for both desktop and mobile devices. 📱💻
@@ -9,12 +17,41 @@ A responsive landing page for a bakery, designed to showcase their products and 
 - **Sass**: Employed for styling to streamline CSS writing and maintain a clean, modular structure. ✨
 - **Animation & Transformation**: Applied smooth animations and CSS transformations to enhance user interaction and visual appeal. 🎬💫
 
-## 🛠️ Technologies Used:
-- HTML
-- CSS (Flexbox, Grid)
-- Sass (for SCSS preprocessing)
-- BEM (for CSS architecture)
-- CSS Animations & Transformations
 
-## 🚀 Demo
-Check out the live version of the project [here](https://nadiiabulmak.github.io/landing_bakery/).
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/NadiiaBulmak/landing_bakery
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd landing_bakery
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will be available at http://localhost:1234.
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated in the dist folder.
