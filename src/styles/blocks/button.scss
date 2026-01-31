@@ -8,7 +8,7 @@
 
     @include sizing(24px, 24px);
 
-    background-image: url(/src/images/icons/Icon-cookie.png);
+    background-image: url(/src/images/icons/icon-cookie.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -51,6 +51,6 @@
     }
   }
   &:hover .button__img {
-    background-image: url(/src/images/icons/Icon-cookie--hover.png);
+    background-image: url(/src/images/icons/icon-cookie--hover.png);
   }
 }
