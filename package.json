@@ -1,0 +1,47 @@
+{
+  "name": "landing_bakery",
+  "version": "1.0.0",
+  "description": "A responsive landing page for a bakery, designed to showcase their products and services. This project demonstrates the use of modern web technologies, including BEM methodology, Flexbox, Grid, Sass, as well as Animation and Transformation effects to create a clean and visually appealing layout.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+    "lint:js": "eslint \"src/**/*.{js,mjs}\"",
+    "lint:css": "stylelint \"**/*.{css,scss}\"",
+    "lint:html": "linthtml \"**/*.html\""
+  },
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.6",
+    "@parcel/transformer-sass": "^2.16.3",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "parcel": "^2.12.0",
+    "prettier": "^3.3.2",
+    "stylelint": "^16.7.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-scss": "^6.4.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "keywords": [
+    "landing-page",
+    "frontend",
+    "parcel",
+    "scss",
+    "bem",
+    "responsive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadiiaBulmak/landing_bakery.git"
+  },
+  "author": "Nadiia Bulmak",
+  "bugs": {
+    "url": "https://github.com/NadiiaBulmak/landing_bakery/issues"
+  },
+  "homepage": "https://nadiiabulmak.github.io/landing_bakery/"
+}

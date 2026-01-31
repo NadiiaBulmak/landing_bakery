@@ -1,0 +1,34 @@
+@use 'utils';
+@use 'fonts';
+@use 'typography';
+@use 'first-screen/top-bar';
+@use 'first-screen/nav';
+@use 'first-screen/menu';
+@use 'first-screen/header';
+@use 'first-screen/icons';
+@use 'blocks/hero-block';
+@use 'blocks/button';
+@use 'blocks/page';
+@use 'blocks/main-page';
+@use 'blocks/section';
+@use 'blocks/card';
+@use 'blocks/footer';
+@use 'blocks/info';
+@use 'blocks/animation';
+
+// #ai-chat-widget {
+//   position: fixed !important;
+//   bottom: 0;
+//   right: 2rem;
+//   left: 2rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   max-height: 38rem;
+// }
+
+// @media (min-width: 37.5rem) {
+//   #ai-chat-widget {
+//     left: auto;
+//   }
+// }
