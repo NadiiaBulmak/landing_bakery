@@ -1,0 +1,18 @@
+@use 'utils' as *;
+@use 'fonts';
+@use 'typography';
+
+@use 'first-screen/top-bar';
+@use 'first-screen/nav';
+@use 'first-screen/menu';
+@use 'first-screen/header';
+@use 'first-screen/icons';
+@use 'blocks/hero-block';
+@use 'blocks/button';
+@use 'blocks/page';
+@use 'blocks/main-page';
+@use 'blocks/section';
+@use 'blocks/card';
+@use 'blocks/footer';
+@use 'blocks/info';
+@use 'blocks/animation';

@@ -1,0 +1,15 @@
+@use '../utils' as *;
+
+.header {
+  &__content {
+    @include header-padding-inline;
+  }
+
+  &__nav {
+    display: none;
+
+    @include on-desctop {
+      @include flexing(flex, center, space-between);
+    }
+  }
+}
